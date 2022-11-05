@@ -34,7 +34,6 @@ print(f"\nYour array: {array}")
 print("\nMenu: \n1 -> Add an element \n2 -> Insert an element \n3 -> Modify an element \n4 -> Delete an element \n5 -> Arrange in ascending order \n6 -> Arrange in descending order \n7 -> Double check the length \n8 -> Count an element \n9 -> Find the index of an element \n10 -> Pop an element \n11 -> Reverse the array \n12 -> Find the smallest element \n13 -> Find the largest element \n14 -> Sum the elements")
 
 # while loop if the entered number is out of the scope
-desiredFunc = False
 while True:
     desiredFunc = int(input("\nEnter the number you want to execute (1 to 14): "))
     if desiredFunc >= 1 and desiredFunc <= 14:
