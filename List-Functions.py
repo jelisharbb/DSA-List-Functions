@@ -30,6 +30,12 @@
 array = [3, 8, 45, 21, 1, 78, 301, 59, 9, 0]
 print(array)
 
-print("\nMenu: 1 -> Add an element \n2 -> Insert an element \n3 -> Modify an element \n4 -> Delete an element \n5 -> Arrange in ascending order \n6 -> Arrange in descending order")
+print("\nMenu: \n1 -> Add an element \n2 -> Insert an element \n3 -> Modify an element \n4 -> Delete an element \n5 -> Arrange in ascending order \n6 -> Arrange in descending order")
 
 desiredFunc = input("\nWhat do you want to do? (1-6): ")
+
+if int(desiredFunc) == 1:
+    desiredNum = input("Enter the number you want to add: ")
+    array.append(int(desiredNum))
+    print(f"This is your new array: {array} ")
+
