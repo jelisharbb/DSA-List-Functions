@@ -44,3 +44,9 @@ elif desiredFunc == 2:
     desiredIndex = int(input("Enter the index you want to insert the number: "))
     array.insert(desiredIndex, desiredNum)
     print(f"\nThis is your new array: {array} ")
+
+elif desiredFunc == 3:
+    desiredNum = int(input("Enter the number you want to modify: "))
+    desiredIndex = int(input("Enter the index you want to modify: "))
+    array[desiredIndex] = desiredNum
+    print(f"\nThis is your new array: {array} ")
