@@ -32,10 +32,15 @@ print(array)
 
 print("\nMenu: \n1 -> Add an element \n2 -> Insert an element \n3 -> Modify an element \n4 -> Delete an element \n5 -> Arrange in ascending order \n6 -> Arrange in descending order")
 
-desiredFunc = input("\nWhat do you want to do? (1-6): ")
+desiredFunc = int(input("\nWhat do you want to do? (1-6): "))
 
-if int(desiredFunc) == 1:
-    desiredNum = input("Enter the number you want to add: ")
-    array.append(int(desiredNum))
-    print(f"This is your new array: {array} ")
+if desiredFunc == 1:
+    desiredNum = int(input("Enter the number you want to add: "))
+    array.append(desiredNum)
+    print(f"\nThis is your new array: {array} ")
 
+elif desiredFunc == 2:
+    desiredNum = int(input("Enter the number you want to insert: "))
+    desiredIndex = int(input("Enter the index you want to insert the number: "))
+    array.insert(desiredIndex, desiredNum)
+    print(f"\nThis is your new array: {array} ")
