@@ -42,6 +42,7 @@ while True:
     else:
         print("The number you entered is beyond the scope of this program. Try choosing from 1 to 14.")
 
+# conditions 1 to 14 starts here
 if desiredFunc == 1:
     desiredNum = int(input("Enter the number you want to append: "))
     array.append(desiredNum)
