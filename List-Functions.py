@@ -50,3 +50,8 @@ elif desiredFunc == 3:
     desiredIndex = int(input("Enter the index you want to modify: "))
     array[desiredIndex] = desiredNum
     print(f"\nThis is your new array: {array} ")
+
+elif desiredFunc == 4:
+    desiredNum = int(input("Enter the number you want to remove: "))
+    array.remove(desiredNum)
+    print(f"\nThis is your new array: {array} ")
