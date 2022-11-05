@@ -55,3 +55,11 @@ elif desiredFunc == 4:
     desiredNum = int(input("Enter the number you want to remove: "))
     array.remove(desiredNum)
     print(f"\nThis is your new array: {array} ")
+
+elif desiredFunc == 5:
+    array.sort()
+    print(f"\nThis is your new array: {array} ")
+
+elif desiredFunc == 6:
+    array.sort(reverse=True)
+    print(f"\nThis is your new array: {array} ")
