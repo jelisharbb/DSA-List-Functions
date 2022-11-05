@@ -31,21 +31,19 @@ print("\nWelcome aboard! In this program, you have an array containing 10 random
 array = [3, 8, 45, 21, 1, 78, 301, 59, 9, 0]
 print(f"\nYour array: {array}")
 
-print("\nMenu: \n1 -> Add an element \n2 -> Insert an element \n3 -> Modify an element \n4 -> Delete an element \n5 -> Arrange in ascending order \n6 -> Arrange in descending order \n7 -> Double check the length \n8 -> Count an element \n9 -> Find the index of an element \n10 -> Pop an element")
+print("\nMenu: \n1 -> Add an element \n2 -> Insert an element \n3 -> Modify an element \n4 -> Delete an element \n5 -> Arrange in ascending order \n6 -> Arrange in descending order \n7 -> Double check the length \n8 -> Count an element \n9 -> Find the index of an element \n10 -> Pop an element \n11 -> Reverse the array \n12 -> Find the smallest element \n13 -> Find the largest element \n14 -> Sum the elements")
 
-# desiredFunc = False
-
-# while not desiredFunc:
-#     desiredFunc = int(input("\nWhat do you want to do? (1-6): "))
-#     if desiredFunc > 1 and desiredFunc < 6:
-#         break
-#     else:
-#         print("\nThe number you entered is beyond the scope of this program. Try choosing from 1 to 6.")
-
-desiredFunc = int(input("\nWhat do you want to do? (1-10): "))
+# while loop if the entered number is out of the scope
+desiredFunc = False
+while True:
+    desiredFunc = int(input("\nEnter the number you want to execute (1 to 14): "))
+    if desiredFunc >= 1 and desiredFunc <= 14:
+        break
+    else:
+        print("The number you entered is beyond the scope of this program. Try choosing from 1 to 14.")
 
 if desiredFunc == 1:
-    desiredNum = int(input("Enter the number you want to add: "))
+    desiredNum = int(input("Enter the number you want to append: "))
     array.append(desiredNum)
     print(f"\nThis is your new array: {array}\n")
 
@@ -68,11 +66,11 @@ elif desiredFunc == 4:
 
 elif desiredFunc == 5:
     array.sort()
-    print(f"\nThis is your new array: {array}\n")
+    print(f"\nThis is your new array in ascending order: {array}\n")
 
 elif desiredFunc == 6:
     array.sort(reverse=True)
-    print(f"\nThis is your new array: {array}\n")
+    print(f"\nThis is your new array in descending order: {array}\n")
 
 elif desiredFunc == 7:
     print(f"\nThe length of the array is {len(array)}\n")
@@ -98,3 +96,16 @@ elif desiredFunc == 10:
     print(f"\nHere's the number you popped: {array[desiredIndex]}")
     array.pop(desiredIndex)
     print(f"This is your new array: {array}\n")
+
+elif desiredFunc == 11:
+    array.reverse()
+    print(f"\nThis is your reversed array: {array}\n")
+
+elif desiredFunc == 12:
+    print(f"\nThis is smallest number in the array {min(array)}.\n")
+
+elif desiredFunc == 13:
+    print(f"\nThis is largest number in the array {max(array)}.\n")
+
+elif desiredFunc == 14:
+    print(f"\nThis is sum of the numbers in the array {sum(array)}.\n")
